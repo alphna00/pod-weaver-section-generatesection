@@ -26,7 +26,7 @@ with (
 );
 use namespace::autoclean;
 
-# ABSTRACT: add pod section from an interpreted piece of text
+# ABSTRACT: add pod section from an interpolated piece of text
 
 =head1 SYNOPSIS
 
