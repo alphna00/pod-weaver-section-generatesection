@@ -71,6 +71,8 @@ example:
 
 The text to be added to the section. Multiple values are allowed and will be
 concatenated. Certain sequences on the text will be replaced (see below).
+
+=for Pod::Coverage mvp_multivalue_args
 =cut
 
 sub mvp_multivalue_args { return qw(text) }
@@ -155,6 +157,9 @@ variables are also set:
 
 =back
 
+=cut
+
+=for Pod::Coverage weave_section
 =cut
 
 sub weave_section {
