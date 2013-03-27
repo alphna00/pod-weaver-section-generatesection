@@ -1,4 +1,6 @@
 package Pod::Weaver::Section::GenerateSection;
+use utf8;
+
 ## Copyright (C) 2013 Carnë Draug <carandraug+dev@gmail.com>
 ##
 ## This program is free software; you can redistribute it and/or modify
@@ -81,7 +83,7 @@ has text => (
 
 =attr head
 
-The heading level of this section. Defaults to 1.
+The heading level of this section. If 0, there will be no heading. Defaults to 1.
 =cut
 
 has head => (
@@ -179,14 +181,14 @@ sub weave_section {
       bugtracker_email => $input->{distmeta}->{resources}->{bugtracker}->{mailto},
     });
   }
-
-  $text = Pod::Elemental::Element::Nested->new({
-    command  => "head" . $self->head,
-    content  => $self->title,
-    children => [
-      Pod::Elemental::Element::Pod5::Ordinary->new({ content => $text }),
-    ],
-  });
+  $text = Pod::Elemental::Element::Pod5::Ordinary->new({ content => $text });
+  if ($self->head) {
+    $text = Pod::Elemental::Element::Nested->new({
+      command  => "head" . $self->head,
+      content  => $self->title,
+      children => [$text],
+    });
+  }
   $document->children->push($text);
 }
 
