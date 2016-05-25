@@ -19,7 +19,6 @@ use utf8;
 use strict;
 use warnings;
 use Moose;
-use Moose::Autobox;
 use MooseX::AttributeShortcuts;
 use MooseX::Types::Moose qw(ArrayRef Bool Int Str);
 with (
@@ -169,7 +168,7 @@ sub weave_section {
     return if $input->{zilla}->main_module->name ne $input->{filename};
   }
 
-  my $text = join ("\n", $self->text->flatten);
+  my $text = join ("\n", @{ $self->text });
   if ($self->is_template) {
     $text = $self->fill_in_string($text,
     {
@@ -194,7 +193,7 @@ sub weave_section {
       children => [$text],
     });
   }
-  $document->children->push($text);
+  push @{ $document->children }, $text;
 }
 
 __PACKAGE__->meta->make_immutable;

@@ -2,6 +2,7 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 -----------------------------------------------------------------------------------
 
 {{$NEXT}}
+  * the use of Moose::Autobox has been removed.
 
 1.01      2013-03-27 01:10:59 Europe/Dublin
   * Introduced option to use no heading with a head value of 0 (zero).
