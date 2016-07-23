@@ -1,4 +1,6 @@
-=encoding utf-8
+=pod
+
+=encoding UTF-8
 
 =head1 NAME
 
@@ -104,9 +106,10 @@ Carnë Draug <cdraug@cpan.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2013 by Carnë Draug.
+This software is Copyright (c) 2016 by Carnë Draug.
 
 This is free software, licensed under:
 
   The GNU General Public License, Version 3, June 2007
 
+=cut
