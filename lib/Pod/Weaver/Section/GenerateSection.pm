@@ -38,7 +38,7 @@ In your F<weaver.ini>
   text  = This is the POD for distribution {{$name}}. Check out what we have
   text  = been up to at {{$homepage}}
 
-The title value can be ommited if passed as the plugin name:
+The title value can be omited if passed as the plugin name:
 
   [GenerateSection / HOMEPAGE]
 
@@ -48,8 +48,8 @@ This plugin attempts to be a cross between L<Pod::Weaver::Section::Template> and
 L<Dist::Zilla::Plugin::GenerateFile> without the generation of extra files.
 
 The values of text are concatenated and variable names with matching values on
-the distribution are interpolated. Specifying the heading level allows to write
-down a rather long section of POD text without need for extra files. For
+the distribution are interpolated. Specifying the heading level allows one to
+write down a rather long section of POD text without need for extra files. For
 example:
 
   [GenerateSection / FEEDBACK]
