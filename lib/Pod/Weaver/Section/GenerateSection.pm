@@ -1,4 +1,5 @@
 package Pod::Weaver::Section::GenerateSection;
+
 use utf8;
 
 ## Copyright (C) 2013-2016 Carnë Draug <carandraug+dev@gmail.com>
