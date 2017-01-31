@@ -19,9 +19,13 @@ use utf8;
 
 use strict;
 use warnings;
+
 use Moose;
 use MooseX::AttributeShortcuts;
 use MooseX::Types::Moose qw(ArrayRef Bool Int Str);
+use Pod::Elemental::Element::Nested;
+use Pod::Elemental::Element::Pod5::Ordinary;
+
 with (
   'Pod::Weaver::Role::Section',
   'Dist::Zilla::Role::TextTemplate',
