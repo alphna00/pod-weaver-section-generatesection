@@ -2,6 +2,8 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 -----------------------------------------------------------------------------------
 
 {{$NEXT}}
+
+1.03      2017-01-31 18:36:49+00:00 Europe/London
   * Explicitly import required modules.
   * Added test suite.
 
