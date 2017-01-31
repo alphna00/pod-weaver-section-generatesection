@@ -2,7 +2,7 @@ package Pod::Weaver::Section::GenerateSection;
 
 use utf8;
 
-## Copyright (C) 2013-2016 Carnë Draug <carandraug+dev@gmail.com>
+## Copyright (C) 2013-2017 Carnë Draug <carandraug+dev@gmail.com>
 ##
 ## This program is free software; you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
