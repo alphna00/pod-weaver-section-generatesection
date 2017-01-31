@@ -3,6 +3,7 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 
 {{$NEXT}}
   * Explicitly import required modules.
+  * Added test suite.
 
 1.02      2016-07-24 00:13:33+01:00 Europe/London
   * The use of Moose::Autobox has been removed.
