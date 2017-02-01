@@ -111,7 +111,7 @@ ENDCONFIG
     expected => << 'ENDPOD',
 =head1 Header Title
 
-This is package {{\$name}} v{{\$version}}
+This is package \{\{\$name}} v\{\{\$version}}
 
 =cut
 ENDPOD
