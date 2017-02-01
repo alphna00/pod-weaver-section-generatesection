@@ -19,7 +19,6 @@ use utf8;
 use strict;
 use warnings;
 
-use File::Spec;
 use Test::More;
 
 use Test::DZil;
@@ -213,15 +212,14 @@ foreach my $test (@tests)
 
     subtest $test->{name} => sub
     {
-
       my $tzil = Test::DZil->Builder->from_config (
         {dist_root => 'does-not-exist'},
         {
           add_files => {
-            File::Spec->catfile ("source", "dist.ini") => $dzil_ini,
-            File::Spec->catfile ("source", "lib", "Foo.pm") => $module_text,
-            File::Spec->catfile ("source", "Changes") => "",
-            File::Spec->catfile ("source", "weaver.ini") => $test->{config},
+            "source/dist.ini" => $dzil_ini,
+            "source/lib/Foo.pm" => $module_text,
+            "source/Changes" => "",
+            "source/weaver.ini" => $test->{config},
           },
         }
       );
@@ -229,7 +227,7 @@ foreach my $test (@tests)
       $tzil->chrome->logger->set_debug (1);
 
       is (exception { $tzil->build },undef, 'build completes');
-      like ($tzil->slurp_file (File::Spec->catfile ("build", "lib", "Foo.pm")),
+      like ($tzil->slurp_file ("build/lib/Foo.pm"),
             qr/$test->{expected}/,
             'correct section generated');
     }

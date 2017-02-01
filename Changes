@@ -4,6 +4,8 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 {{$NEXT}}
   * Declare missing Dist::Zilla:Plugin::PodWeaver dependency for
     testsuite.
+  * Fix testsuite for Windows systems (actually, systems with a file
+    separator other than /).
 
 1.04      2017-02-01 15:58:37+00:00 Europe/London
   * Fix regex in tests for compatibility with perl 5.22.
