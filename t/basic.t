@@ -106,12 +106,12 @@ ENDPOD
 [GenerateSection]
 title = Header Title
 is_template = 0
-text = This is package {{$name}} v{{$versionas}}
+text = This is package {{$name}} v{{$version}}
 ENDCONFIG
     expected => << 'ENDPOD',
 =head1 Header Title
 
-This is package {{\$name}} v{{\$versionas}}
+This is package {{\$name}} v{{\$version}}
 
 =cut
 ENDPOD
