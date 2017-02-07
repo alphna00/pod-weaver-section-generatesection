@@ -2,6 +2,8 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 -----------------------------------------------------------------------------------
 
 {{$NEXT}}
+
+1.06      2017-02-07 19:41:10+00:00 Europe/London
   * Remove dependency on perl 5.10 which was only required for the tests.
 
 1.05      2017-02-01 18:36:14+00:00 Europe/London
