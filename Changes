@@ -2,6 +2,7 @@ Summary of important user-visible changes for Pod::Weaver::Section::GenerateSect
 -----------------------------------------------------------------------------------
 
 {{$NEXT}}
+  * Remove dependency on perl 5.10 which was only required for the tests.
 
 1.05      2017-02-01 18:36:14+00:00 Europe/London
   * Declare missing Dist::Zilla:Plugin::PodWeaver dependency for

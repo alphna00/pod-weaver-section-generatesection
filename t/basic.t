@@ -202,7 +202,8 @@ END
 
 foreach my $test (@tests)
   {
-    my $dzil_options = $test->{dzil_options} // [];
+    my $dzil_options = defined ($test->{dzil_options}) ?
+                         $test->{dzil_options} : [];
     my $dzil_ini = simple_ini (
       {name => 'Foo-Bar', version => '0.010'},
       'GatherDir', # needed for the build to remain after build
